@@ -1,0 +1,12 @@
+@use './function' as *;
+
+//colors
+
+$colors: (
+	'cyan': 179 62% 43%,
+	'bright-yellow': 71 73% 54%,
+	'light-gray': 204 43% 93%,
+	'gray-blue': 218 22% 67%,
+);
+
+$fz-base: rem(16);
