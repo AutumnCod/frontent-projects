@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-size: $fz-base;
+	background-color: hsl(var(--clr-light-gray));
+}

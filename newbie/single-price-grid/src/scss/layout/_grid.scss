@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.grid {
+	// width: rem(316);
+	width: 100px;
+	display: grid;
+	background: red;
+	padding: 2em;
+
+	align-items: center;
+}
