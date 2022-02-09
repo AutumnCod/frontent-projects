@@ -1,4 +1,5 @@
 @use './function' as *;
+@use './mixins' as m;
 
 //colors
 
@@ -9,4 +10,7 @@ $colors: (
 	'gray-blue': 218 22% 67%,
 );
 
-$fz-base: rem(16);
+$fs-600: rem(19);
+$fs-500: rem(15);
+$fs-400: rem(14);
+$fs-300: rem(13);

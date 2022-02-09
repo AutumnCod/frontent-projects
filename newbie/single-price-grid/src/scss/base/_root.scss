@@ -4,4 +4,12 @@
 	@each $color, $val in $colors {
 		--clr-#{$color}: #{$val};
 	}
+
+	@each $screen-size, $property in $font-sizes {
+		@include mq($screen-size) {
+			@each $prop, $value in $property {
+				--fs-#{$prop}: #{$value};
+			}
+		}
+	}
 }

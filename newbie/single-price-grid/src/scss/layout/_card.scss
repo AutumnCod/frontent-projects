@@ -1,0 +1,137 @@
+@use '../abstracts' as *;
+
+.card {
+	padding-inline: rem(30);
+
+	@include mq(medium) {
+		padding-inline: rem(40);
+	}
+
+	&__top {
+		grid-area: header;
+		padding-block: rem(30);
+		background-color: #fff;
+
+		@include mq(small) {
+			padding-block: rem(46);
+		}
+	}
+
+	&__middle {
+		grid-area: middle;
+		padding-block: rem(24);
+		background-color: hsl(var(--clr-cyan));
+		@include mq(small) {
+			padding-block: rem(44);
+		}
+	}
+
+	&__bottom {
+		grid-area: bottom;
+		padding-block: rem(24);
+		background-color: hsl(var(--clr-cyan) / 0.7);
+
+		@include mq(small) {
+			padding-block: rem(44);
+		}
+	}
+
+	&__title {
+		font-size: var(--fs-600);
+
+		&-top {
+			color: hsl(var(--clr-cyan));
+			margin-bottom: rem(26);
+		}
+
+		&-middle {
+			color: #fff;
+			margin-bottom: rem(20);
+			@include mq(small) {
+				font-size: var(--fs-500);
+				margin-bottom: rem(22);
+			}
+		}
+
+		&-bottom {
+			color: #fff;
+			margin-bottom: rem(22);
+
+			@include mq(small) {
+				font-size: var(--fs-500);
+			}
+		}
+	}
+
+	&__subtitle {
+		font-size: var(--fs-400);
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: rem(26);
+
+		&-top {
+			color: hsl(var(--clr-bright-yellow));
+		}
+	}
+
+	&__description {
+		// width: 30ch;
+		font-size: var(--fs-300);
+		line-height: 1.5;
+
+		color: hsl(var(--clr-gray-blue));
+		margin-bottom: rem(6);
+
+		&-middle {
+			color: #fff;
+			margin-bottom: rem(26);
+			@include mq(small) {
+				font-size: var(--fs-300);
+			}
+		}
+	}
+
+	&__price {
+		display: flex;
+		height: auto;
+		align-items: center;
+		color: rgba(255, 255, 255, 0.8);
+		font-size: var(--fs-400);
+		margin-bottom: rem(14);
+		span {
+			font-size: var(--fs-800);
+			font-weight: 700;
+			margin-right: rem(14);
+			color: #fff;
+		}
+	}
+
+	&__btn {
+		padding: rem(12);
+		width: 100%;
+		outline: none;
+		border: none;
+		text-transform: capitalize;
+		font-size: var(--fs-500);
+		border-radius: rem(8);
+		font-weight: 700;
+		background-color: hsl(var(--clr-bright-yellow));
+		color: #fff;
+		cursor: pointer;
+		box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.08);
+	}
+
+	&__list {
+		font-size: var(--fs-400);
+		list-style: none;
+		color: rgba(255, 255, 255, 0.8);
+
+		@include mq(small) {
+			font-size: var(--fs-200);
+		}
+
+		li {
+			margin-bottom: rem(5);
+		}
+	}
+}

@@ -3,7 +3,8 @@
 body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
-	line-height: 1.5;
-	font-size: $fz-base;
+	line-height: 1.1;
+	font-size: var(--fs-400);
 	background-color: hsl(var(--clr-light-gray));
+	font-family: 'Karla', sans-serif;
 }

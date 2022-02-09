@@ -12,11 +12,50 @@
 			href="./images/favicon-32x32.png"
 		/>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Frontend Mentor | Single Price Grid Component</title>
 
 		<link rel="stylesheet" href="./scss/main.scss" />
 	</head>
 	<body class="grid">
-		<main class="container"></main>
+		<main class="container">
+			<article class="card card__top">
+				<h1 class="card__title card__title-top">Join our community</h1>
+				<p class="card__subtitle card__subtitle-top">
+					30-day, hassle-free money back guarantee
+				</p>
+				<p class="card__description">
+					Gain access to our full library of tutorials along with expert
+					code reviews. Perfect for any developers who are serious about
+					honing their skills.
+				</p>
+			</article>
+			<article class="card card__middle">
+				<h2 class="card__title card__title-middle">Monthly Subscription</h2>
+				<div class="card__price"><span>$29</span> per Month</div>
+				<p class="card__desctiption card__description-middle">
+					Full access for less than &dollar;1 a day
+				</p>
+				<button type="submit" class="card__btn">sign up</button>
+			</article>
+			<article class="card card__bottom">
+				<h2 class="card__title card__title-bottom">Why us</h2>
+				<ul class="card__list">
+					<li>Why Us Tutorials by industry experts</li>
+					<li>Peer &amp; expert code review</li>
+					<li>Coding exercises</li>
+					<li>Access to our GitHub repos</li>
+					<li>Community forum</li>
+					<li>Flashcard decks</li>
+					<li>New videos every week</li>
+				</ul>
+			</article>
+		</main>
 	</body>
 </html>
