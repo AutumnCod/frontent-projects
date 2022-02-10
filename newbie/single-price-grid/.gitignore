@@ -17,5 +17,5 @@ node_modules
 style-guide.md
 README-template.md 
 .parcel-cache
-
+dist
 

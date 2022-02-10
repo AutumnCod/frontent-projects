@@ -119,6 +119,30 @@
 		color: #fff;
 		cursor: pointer;
 		box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.08);
+
+		span {
+			position: relative;
+			display: inline-block;
+			transition: 0.5s;
+		}
+
+		span::after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+
+		&:hover span {
+			padding-right: rem(25);
+		}
+
+		&:hover span::after {
+			opacity: 1;
+			right: 0;
+		}
 	}
 
 	&__list {

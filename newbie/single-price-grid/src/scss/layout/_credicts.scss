@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.credicts {
+	width: 25ch;
+	margin-bottom: 2rem;
+
+	@include mq(medium) {
+		width: 35ch;
+		position: absolute;
+		bottom: 16px;
+		left: 16px;
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: hsl(var(--clr-cyan));
+		font-weight: 700;
+	}
+
+	a:hover,
+	a:active,
+	a:focus,
+	a:visited {
+		font-weight: normal;
+	}
+}
