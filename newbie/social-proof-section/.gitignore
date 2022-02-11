@@ -16,3 +16,5 @@
 design
 node_modules
 template
+dist 
+.parcel-cache 
