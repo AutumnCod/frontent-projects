@@ -1,0 +1,16 @@
+{
+  "name": "social-proof-section",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html -p 8000 --open",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  }
+}
