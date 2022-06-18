@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+body {
+  background-color: hsl(var(--clr-primary-red));
+  background-image: url('../images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  display: grid;
+	align-items: center;
+	justify-content: center;
+
+  @include mq(tablet){
+    background-image: url('../images/bg-intro-desktop.png');
+  }
+}

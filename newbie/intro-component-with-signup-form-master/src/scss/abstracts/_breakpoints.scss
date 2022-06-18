@@ -1,0 +1,7 @@
+@use './functions' as *;
+
+$breakpoints: (
+  'mobile': rem(375),
+  'tablet': rem(376),
+  'desktop': rem(960),
+)
