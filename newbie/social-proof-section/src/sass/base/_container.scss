@@ -3,4 +3,12 @@
 .container {
 	max-width: 88%;
 	margin: rem(80) auto rem(96);
+
+	@include mq(desktop) {
+		display: grid;
+		max-width: rem(1100);
+		grid-template-areas:
+			'header rating'
+			'customer customer';
+	}
 }
